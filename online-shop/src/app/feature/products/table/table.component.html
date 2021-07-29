@@ -1,0 +1,63 @@
+<table mat-table [dataSource]="data" class="mat-elevation-z8">
+
+  <!-- Id Column -->
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID</th>
+    <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> NAME</th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <!-- Category Column -->
+  <ng-container matColumnDef="category">
+    <th mat-header-cell *matHeaderCellDef> CATEGORY</th>
+    <td mat-cell *matCellDef="let element"> {{element.category}} </td>
+  </ng-container>
+
+  <!-- Price Column -->
+  <ng-container matColumnDef="price">
+    <th mat-header-cell *matHeaderCellDef> PRICE</th>
+    <td mat-cell *matCellDef="let element">{{element.price|currency:'GBP'}}</td>
+  </ng-container>
+
+  <!-- Delete Column -->
+  <ng-container matColumnDef="delete">
+    <th mat-header-cell *matHeaderCellDef> DELETE</th>
+    <td mat-cell *matCellDef="let element">
+      <button mat-fab color="primary" (click)="deleteProduct(element.id)"
+              aria-label="Example icon button with a delete icon">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<!--without Angular Material UI-->
+<!--<table>-->
+<!--  <thead>-->
+<!--    <tr>-->
+<!--      <td>ID</td>-->
+<!--      <td>Name</td>-->
+<!--      <td>Category</td>-->
+<!--      <td>Price</td>-->
+<!--    </tr>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--    &lt;!&ndash;iterez toate datele cu ngFor&ndash;&gt;-->
+<!--    &lt;!&ndash; ngIf pt conditii&ndash;&gt;-->
+<!--    <tr *ngFor="let p of data">-->
+<!--      <td>{{p.id}}</td>-->
+<!--      <td>{{p.name}}</td>-->
+<!--      <td>{{p.category}}</td>-->
+<!--      <td *ngIf="p.price>10">{{p.price}}</td>-->
+<!--      <td *ngIf="p.price<=10">ieftin</td>-->
+<!--    </tr>-->
+<!--  </tbody>-->
+<!--</table>-->

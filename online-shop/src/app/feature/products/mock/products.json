@@ -1,0 +1,308 @@
+[
+  {
+    "id": 0,
+    "name": "Notebook Basic 15",
+    "category": "Laptops",
+    "price": 956
+  },
+  {
+    "id": 1,
+    "name": "Notebook Basic 17",
+    "category": "Laptops",
+    "price": 1249
+  },
+  {
+    "id": 2,
+    "name": "Notebook Basic 18",
+    "category": "Laptops",
+    "price": 1570
+  },
+  {
+    "id": 3,
+    "name": "Notebook Basic 19",
+    "category": "Laptops",
+    "price": 1650
+  },
+  {
+    "id": 4,
+    "name": "ITelO Vault",
+    "category": "Accessories",
+    "price": 299
+  },
+  {
+    "id": 5,
+    "name": "Notebook Professional 15",
+    "category": "Accessories",
+    "price": 1999
+  },
+  {
+    "id": 6,
+    "name": "Notebook Professional 17",
+    "category": "Laptops",
+    "price": 2299
+  },
+  {
+    "id": 7,
+    "name": "ITelO Vault Net",
+    "category": "Accessories",
+    "price": 459
+  },
+  {
+    "id": 8,
+    "name": "ITelO Vault SAT",
+    "category": "Accessories",
+    "price": 149
+  },
+  {
+    "id": 9,
+    "name": "Comfort Easy",
+    "category": "Accessories",
+    "price": 1679
+  },
+  {
+    "id": 10,
+    "name": "Comfort Senior",
+    "category": "Accessories",
+    "price": 512
+  },
+  {
+    "id": 11,
+    "name": "Ergo Screen E-I",
+    "category": "Flat Screen Monitors",
+    "price": 230
+  },
+  {
+    "id": 12,
+    "name": "Ergo Screen E-II",
+    "category": "Flat Screen Monitors",
+    "price": 285
+  },
+  {
+    "id": 13,
+    "name": "Ergo Screen E-III",
+    "category": "Flat Screen Monitors",
+    "price": 345
+  },
+  {
+    "id": 14,
+    "name": "Flat Basic",
+    "category": "Flat Screen Monitors",
+    "price": 399
+  },
+  {
+    "id": 15,
+    "name": "Flat Future",
+    "category": "Flat Screen Monitors",
+    "price": 430
+  },
+  {
+    "id": 16,
+    "name": "Flat XL",
+    "category": "Flat Screen Monitors",
+    "price": 1230
+  },
+  {
+    "id": 17,
+    "name": "Laser Professional Eco",
+    "category": "Printers",
+    "price": 830
+  },
+  {
+    "id": 18,
+    "name": "Laser Basic",
+    "category": "Printers",
+    "price": 490
+  },
+  {
+    "id": 19,
+    "name": "Laser Allround",
+    "category": "Printers",
+    "price": 349
+  },
+  {
+    "id": 20,
+    "name": "Ultra Jet Super Color",
+    "category": "Printers",
+    "price": 139
+  },
+  {
+    "id": 21,
+    "name": "Ultra Jet Mobile",
+    "category": "Printers",
+    "price": 99
+  },
+  {
+    "id": 22,
+    "name": "Ultra Jet Super Highspeed",
+    "category": "Printers",
+    "price": 170
+  },
+  {
+    "id": 23,
+    "name": "Multi Print",
+    "category": "Multifunction Printers",
+    "price": 99
+  },
+  {
+    "id": 24,
+    "name": "Multi Color",
+    "category": "Multifunction Printers",
+    "price": 119
+  },
+  {
+    "id": 25,
+    "name": "Cordless Mouse",
+    "category": "Mice",
+    "price": 9
+  },
+  {
+    "id": 26,
+    "name": "Speed Mouse",
+    "category": "Mice",
+    "price": 7
+  },
+  {
+    "id": 27,
+    "name": "Track Mouse",
+    "category": "Mice",
+    "price": 11
+  },
+  {
+    "id": 28,
+    "name": "Ergonomic Keyboard",
+    "category": "Keyboards",
+    "price": 14
+  },
+  {
+    "id": 29,
+    "name": "Internet Keyboard",
+    "category": "Keyboards",
+    "price": 16
+  },
+  {
+    "id": 30,
+    "name": "Media Keyboard",
+    "category": "Keyboards",
+    "price": 26
+  },
+  {
+    "id": 31,
+    "name": "Mousepad",
+    "category": "Mousepads",
+    "price": 6
+  },
+  {
+    "id": 32,
+    "name": "Ergo Mousepad",
+    "category": "Mousepads",
+    "price": 8
+  },
+  {
+    "id": 33,
+    "name": "Designer Mousepad",
+    "category": "Mousepads",
+    "price": 12
+  },
+  {
+    "id": 34,
+    "name": "Universal card reader",
+    "category": "Computer System Accessories",
+    "price": 14
+  },
+  {
+    "id": 35,
+    "name": "Proctra X",
+    "category": "Graphic Cards",
+    "price": 70
+  },
+  {
+    "id": 36,
+    "name": "Gladiator MX",
+    "category": "Graphic Cards",
+    "price": 81
+  },
+  {
+    "id": 37,
+    "name": "Hurricane GX",
+    "category": "Graphic Cards",
+    "price": 101
+  },
+  {
+    "id": 38,
+    "name": "Hurricane GX/LN",
+    "category": "Graphic Cards",
+    "price": 139
+  },
+  {
+    "id": 39,
+    "name": "Photo Scan",
+    "category": "Scanners",
+    "price": 129
+  },
+  {
+    "id": 40,
+    "name": "Power Scan",
+    "category": "Scanners",
+    "price": 89
+  },
+  {
+    "id": 41,
+    "name": "Jet Scan Professional",
+    "category": "Scanners",
+    "price": 169
+  },
+  {
+    "id": 42,
+    "name": "Jet Scan Professional",
+    "category": "Scanners",
+    "price": 189
+  },
+  {
+    "id": 43,
+    "name": "Copymaster",
+    "category": "Multifunction Printers",
+    "price": 1499
+  },
+  {
+    "id": 44,
+    "name": "Surround Sound",
+    "category": "Speakers",
+    "price": 39
+  },
+  {
+    "id": 45,
+    "name": "Blaster Extreme",
+    "category": "Speakers",
+    "price": 26
+  },
+  {
+    "id": 46,
+    "name": "Sound Booster",
+    "category": "Speakers",
+    "price": 45
+  },
+  {
+    "id": 47,
+    "name": "Smart Office",
+    "category": "Software",
+    "price": 89
+  },
+  {
+    "id": 48,
+    "name": "Smart Design",
+    "category": "Software",
+    "price": 79
+  },
+  {
+    "id": 49,
+    "name": "Smart Network",
+    "category": "Software",
+    "price": 69
+  },
+  {
+    "id": 50,
+    "name": "Smart Multimedia",
+    "category": "Software",
+    "price": 77
+  }
+]
