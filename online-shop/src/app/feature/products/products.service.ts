@@ -8,15 +8,15 @@ import { BackendService } from '../../backend/backend.service';
 })
 export class ProductsService {
   api = 'http://localhost:3000';
-  productsEndpoint = '/products';
+  productsEndpoint = 'products';
 
   constructor(private service: BackendService) {}
 
   getProducts(): Observable<ProductsData[]> {
-    return this.service.get(this.api + this.productsEndpoint);
+    return this.service.get(`${this.api}/${this.productsEndpoint}`);
   }
 
   deleteProduct(id: number): Observable<void> {
-    return this.service.delete(this.api + this.productsEndpoint + '/' + id);
+    return this.service.delete(`${this.api}/${this.productsEndpoint}/${id}`);
   }
 }

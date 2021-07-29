@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TableContainerComponent } from './feature/products/table-container/table-container.component';
@@ -15,9 +16,21 @@ import {
   MatSnackBarModule,
 } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { LoginComponent } from './feature/users/login/login.component';
+import { UserFormComponent } from './feature/users/user-form/user-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
-  declarations: [AppComponent, TableContainerComponent, TableComponent],
+  declarations: [
+    AppComponent,
+    TableContainerComponent,
+    TableComponent,
+    LoginComponent,
+    UserFormComponent,
+  ],
   imports: [
     MatTableModule,
     BrowserModule,
@@ -28,10 +41,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatIconModule,
     MatSnackBarModule,
     BrowserAnimationsModule,
+    CommonModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
   ],
   providers: [
     BackendService,
-    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 2500 } },
+    { provide: MAT_SNACK_BAR_DEFAULT_OPTIONS, useValue: { duration: 5000 } },
   ],
   bootstrap: [AppComponent],
 })

@@ -9,31 +9,31 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./table-container.component.scss'],
 })
 export class TableContainerComponent implements OnInit {
+  products: ProductsData[] = [];
+
   constructor(
     private productService: ProductsService,
     private _snackBar: MatSnackBar
   ) {}
 
-  products: ProductsData[] = [];
-
-  ngOnInit() {
+  ngOnInit(): void {
     this.loadProducts();
+  }
+
+  deleteProduct(id: number) {
+    this.productService.deleteProduct(id).subscribe(
+      () => {
+        this.loadProducts();
+        //console.log('s-a sters cu succes produsul cu id: ' + id);
+        this._snackBar.open('Product was successfully deleted');
+      },
+      (error) => this._snackBar.open(error)
+    );
   }
 
   private loadProducts() {
     this.productService
       .getProducts()
       .subscribe((products) => (this.products = products));
-  }
-
-  deleteProduct(id: number) {
-    this.productService.deleteProduct(id).subscribe(
-      () => {
-        this._snackBar.open('Deleted succsesfulu!');
-        this.loadProducts();
-        console.log('s-a sters cu succes');
-      },
-      (error) => console.log('Failed ', error)
-    );
   }
 }
