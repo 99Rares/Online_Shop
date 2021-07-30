@@ -1,0 +1,35 @@
+<form [formGroup]="productForm">
+  <div class="container">
+    <div class="row">
+      <label>Name: </label>
+      <input placeholder="Name" type="name" formControlName="name">
+      <!--    <h2>{{product.name}}</h2>-->
+    </div>
+    <br>
+    <div class="row">
+      <label>Description: </label>
+      <input placeholder="Description" type="name" formControlName="description">
+      <!--    <span>{{product.description}}</span>-->
+    </div>
+    <br>
+    <div class="row">
+      <label>Image: </label>
+      <input placeholder="Image Url" type="text" formControlName="image">
+      <img alt="picture" *ngIf="data.id" src="{{productForm.controls['image'].value}}">
+    </div>
+    <br>
+    <div class="row">
+      <label>Category: </label>
+      <input placeholder="Category" type="name" formControlName="category">
+    </div>
+    <br>
+    <div class="row">
+      <label>Price: </label>
+      <input placeholder="Price" type="number" formControlName="price">
+    </div>
+    <br>
+    <button mat-button color="secondary" (click)="closeDialog()">Close</button>
+    <button *ngIf="data.admin" mat-button color="primary" (click)="updateProduct()">{{getButtonName()}}</button>
+  </div>
+</form>
+
