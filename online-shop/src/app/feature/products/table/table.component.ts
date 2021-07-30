@@ -30,7 +30,7 @@ export class TableComponent {
     //console.log('open Modal');
     const dialogRef = this.dialog.open(ProductModalDialogComponent, {
       width: '50%',
-      height: '100%',
+      height: '75%',
       data: { id, primaryButton: 'Update', admin: this.isAdmin }, //{id: id}
     });
 
